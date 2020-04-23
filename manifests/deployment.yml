@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: rahulltelkarangularappkubernetes 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: rahulltelkarangularappkubernetes 
+    spec:
+      containers:
+        - name: rahulltelkarangularappkubernetes 
+          image: rahulimageregistry.azurecr.io/rahulltelkarangularappkubernetes
+          ports:
+          - containerPort: 80
